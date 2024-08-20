@@ -1,0 +1,29 @@
+package day43;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class AnnotationsDemo1 {
+	@BeforeClass
+	void login()
+	{
+		System.out.println("This is login...");
+	}
+	@Test(priority=1)
+    void Search()
+    {
+    	System.out.println("this is search...");
+    }
+	@Test(priority=2)
+	void advancedsearch()
+	{
+        System.out.println("this is advanced search");
+	}
+	
+	void logout()
+	{
+		System.out.println("this is logout");
+	}
+}
+
